@@ -1,3 +1,60 @@
-body{
-  background-color:pink;
+body {
+  background-color: white;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+h1 {
+  font-size: 28.8px;
+}
+
+.titleCSS {
+  display: flex;
+  justify-content: center;
+}
+
+.Nav-panel-section {
+  font-size: 16px;
+  display: flex;
+  height: 200px;
+  overflow: auto;
+  white-space: nowrap;
+  flex-direction: column;
+  overflow-y: auto;
+  border-top: 1px solid black;
+  border-bottom: 2px solid black;
+}
+
+.quick-scroll-CSS {
+  border: 1px solid black;
+  padding: 15px;
+
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 200px;
+}
+
+.contentCSS {
+  margin: 20px;
+}
+
+@media (min-width: 816px) {
+  body {
+    display: flex;
+  }
+  .quick-scroll-CSS {
+    width: 240px;
+    padding: 10px 30px;
+  }
+
+  .Nav-panel-section {
+    font-size: 16px;
+    display: flex;
+    height: 100vh;
+    overflow: auto;
+    white-space: nowrap;
+    flex-direction: column;
+    overflow-y: auto;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
 }
